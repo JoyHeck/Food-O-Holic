@@ -1,0 +1,118 @@
+/* Container ko flex banayenge taaki footer niche push ho sake */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styling */
+header {
+  margin-top: 20px;
+}
+
+h1 {
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
+
+/* Search Box Styling */
+.search-box {
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 12px;
+  width: 60%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Rounded corners */
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e65b50;
+}
+
+/* Grid Layout */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1; /* Ye content ko expand karega taaki footer niche jaye */
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.category {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+a {
+  display: inline-block;
+  margin-top: auto; /* Button ko bottom mein rakhne ke liye */
+  text-decoration: none;
+  background: #333;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+a:hover {
+  background: #555;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+}
